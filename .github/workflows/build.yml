@@ -14,9 +14,13 @@ jobs:
           kernel-url: https://github.com/enchart/KernelSU-Pixel4XL-susfs
           kernel-branch: main
           config: floral_defconfig
-          arch: arm64
-          aosp-gcc: false
-          aosp-clang: true
-          android-version: 13
-          aosp-clang-version: r450784d
           ccache: true
+          arch: arm64
+          aosp-clang: true
+          aosp-clang-version: r450784d
+          android-version: 13
+          aosp-gcc: false
+          other-gcc64-url: https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9
+          other-gcc64-branch: android-msm-coral-4.14-android13
+          other-gcc32-url: https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9
+          other-gcc32-branch: android-msm-coral-4.14-android13
